@@ -18,6 +18,7 @@ const weeks = [
       ["Incline", "35-40 min", "Brisk hills, stairs, or incline treadmill; controlled effort"],
       ["Easy walk", "2 miles", "Recovery pace"],
       ["Long hike", "4-5 miles", "Light pack, about 10-15 lb; seek hills when possible"],
+      ["Enjoy a Beer", "1 cold one", "Chill and savour the achievement of your week's training"],
     ],
   },
   {
@@ -29,6 +30,7 @@ const weeks = [
       ["Incline", "45 min", "Sustained hills/stairs; steady, conversational effort"],
       ["Easy walk", "2 miles", "Recovery pace"],
       ["Long hike", "5-6 miles", "15-20 lb pack; prioritize rolling or hilly terrain"],
+      ["Enjoy a Beer", "1 cold one", "Chill and reflect on two weeks of achievement"],
     ],
   },
   {
@@ -40,6 +42,7 @@ const weeks = [
       ["Incline", "50-60 min", "Longest climbing session; steady rather than maximal"],
       ["Easy walk", "2 miles", "Recovery pace"],
       ["Long hike", "6-7 miles", "15-20 lb pack; this is your key rehearsal"],
+      ["Enjoy a Beer", "1 cold one", "2 weeks under the belt !!! Just 1 more week to go !!! "],
     ],
   },
   {
@@ -50,6 +53,7 @@ const weeks = [
       ["Light strength", "20-25 min", "Easy full-body session; stop well before fatigue"],
       ["Easy incline", "25-30 min", "Comfortable effort"],
       ["Rest / easy walk", "Optional", "Prioritize fresh legs"],
+      ["Enjoy a Beer", "12 Oz", "Have a chilled one last time before the summit"],
       ["Guadalupe Peak", "8.4 miles / ~3,000 ft gain", "Hike day. Use the pack, footwear, food and hydration strategy you practiced"],
     ],
   },
