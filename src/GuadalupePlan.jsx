@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import {
   Backpack,
   CheckCircle2,
@@ -56,7 +56,26 @@ const weeks = [
 ];
 
 export default function GuadalupePlan() {
-  const [done, setDone] = useState({});
+  const [done, setDone] = useState(() => {
+    try {
+      const savedProgress = JSON.parse(
+        window.localStorage.getItem("guadalupe-plan-progress") || "null"
+      );
+      return savedProgress && typeof savedProgress === "object" && !Array.isArray(savedProgress)
+        ? savedProgress
+        : {};
+    } catch {
+      return {};
+    }
+  });
+
+  useEffect(() => {
+    try {
+      window.localStorage.setItem("guadalupe-plan-progress", JSON.stringify(done));
+    } catch {
+      // Progress remains available for the current session if storage is unavailable.
+    }
+  }, [done]);
 
   const total = useMemo(
     () => weeks.reduce((count, week) => count + week.sessions.length, 0),
